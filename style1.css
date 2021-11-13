@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+:root{
+    --red:#FF4F5B;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition:all .3s cubic-bezier(.16,.8,.62,1.52);
+    text-transform: capitalize;
+}
+
+*::selection{
+    background:var(--red);
+    color:#fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width:1.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--red);
+}
+
+body{
+    background:#f9f9f9;
+}
+
+section{
+    min-height: 0vh;
+    padding:0 7%;
+    padding-top: 10rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:1rem 4rem;
+    border-radius: 5rem;
+    background:var(--red);
+    color:#fff;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    font-size: 1.7rem;
+}
+
+.btn::before{
+    content:'';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background:#444;
+    clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+    transition:.3s linear;
+}
+
+.btn:hover::before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.heading{
+    font-size: 3rem;
+    color:#666;
+}
+
+.heading span{
+    color:var(--red);
+}
+
+
+header{
+    width:100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0;
+    z-index: 1000;
+    padding:2.5rem 7%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color:#666;
+}
+
+header .logo span{
+    color:var(--red);
+}
+
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar ul li{
+    margin-left: 2.5rem;
+}
+
+header .navbar ul li a{
+    color:#999;
+    font-size: 2rem;
+}
+
+header .navbar ul li a.active,
+header .navbar ul li a:hover{
+    color:var(--red);
+    border-bottom: .2rem solid var(--red);
+    padding:.7rem 0;
+}
+
+#menu{
+    font-size: 3rem;
+    color:#999;
+    cursor: pointer;
+    display: none;
+}
+.Exercise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Exercise .content{
+        flex:1 1 40rem;
+    }
+.Exercise .content p{
+        font-size: 2rem;
+        color:#999;
+        padding:1rem 0;
+        text-align: justify;
+}
+
+.Exercise .image{
+    flex:1 1 40rem;
+}
+
+.Exercise .image {
+    width: 100%;
+    
+    
+}
+.intake{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.intake .content{
+    flex:1 1 40rem;
+
+
+}
+.intake .content p{
+    font-size: 2rem;
+    color:#999;
+    padding:1rem 0;
+    text-align: justify;
+
+}
+.intake .image{
+    flex:1 1 40rem;
+    
+}
+.intake .image{
+    width: 100%;
+}
+.routine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.routine .content{
+    flex:1 1 40rem;
+
+
+}
+.routine .content p{
+    font-size: 2rem;
+    color:#999;
+    padding:1rem 0;
+    text-align: justify;
+
+}
+.routine .image{
+    flex:1 1 40rem;
+    
+}
+.routine .image{
+    width: 0%;
+    margin-left: 11rem;
+}
+.Music{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Music .content{
+    flex:1 1 40rem;
+
+
+}
+.Music .content p{
+    font-size: 2rem;
+    color:#999;
+    padding:1rem 0;
+    text-align: justify;
+
+}
+.Music .image{
+    flex:1 1 40rem;
+    
+}
+.Music .image{
+    width: 10%;
+    margin-left: 25rem;
+}
+.connected{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.connected .content{
+    flex:1 1 40rem;
+
+
+}
+.connected .content p{
+    font-size: 2rem;
+    color:#999;
+    padding:1rem 0;
+    text-align: justify;
+
+}
+.connected .image{
+    flex:1 1 40rem;
+    
+}
+.connected .image{
+    width: 0%;
+    margin-left: 7rem;
+}
+.eat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.eat .content{
+    flex:1 1 40rem;
+
+
+}
+.eat .content p{
+    font-size: 2rem;
+    color:#999;
+    padding:1rem 0;
+    text-align: justify;
+
+}
+.eat .image{
+    flex:1 1 40rem;
+    
+}
+.eat .image{
+    width: 00%;
+    margin-left: 7rem;
+}
